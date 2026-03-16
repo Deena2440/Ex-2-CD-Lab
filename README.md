@@ -78,7 +78,20 @@ return 0;
 }
 ```
 # OUTPUT
-<img width="953" height="343" alt="image" src="https://github.com/user-attachments/assets/6bf1331a-27e7-4933-9374-da48b0723e24" />
+```
+Microsoft Windows [Version 10.0.26200.7623]
+(c) Microsoft Corporation. All rights reserved.
 
+C:\Dev-Cpp\TDM-GCC-64\bin>flex exp2-0058.l
+
+C:\Dev-Cpp\TDM-GCC-64\bin>gcc lex.yy.c -o exp2-0058.exe
+
+C:\Dev-Cpp\TDM-GCC-64\bin>exp2-0058.exe
+a+b*c$
+
+a IDENTIFIER+
+b IDENTIFIER*
+c IDENTIFIER$
+```
 # RESULT
 ## The lexical analyzer is implemented using lex and the output is verified.
